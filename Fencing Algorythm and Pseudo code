@@ -1,0 +1,50 @@
+Fencing Text File
+
+Algorythm:
+determine the dimensions of the yard.  Length and Width
+determine the material for the fence (metal or wood)
+determine how many total gates they are looking for
+	confirm that the customer wants the one mandatory one and (total - 1) optional gates
+	ensure they have at most 3 gates
+	
+calculate perimeter
+	(2* length) + (2 * width)
+calculate cost of perimeter fencing
+	for wood: 25* perimeter
+	for chain link: 16*perimeter
+calculate gate cost
+	150*total number of gates
+	
+calculate cost of materials
+	gateCost + fencingCost
+calculate taxAmount of materials
+	0.06*materialCost
+	
+calculate total cost
+	taxAmount + materialCost + buildingPermit
+	
+	
+Pseudo Code:
+ask user for length of yard
+get length
+ask user for width of yard
+get width of yard
+calculate perimeter = 2*length + 2*width;
+
+ask user what material they want
+get what material the user wants
+
+ask user how many gates they want
+get how many gates
+
+calculate cost of fencing:
+	materialCost = (fencePrice*perimeter + gatePrice*gate)	
+	materialTax = (materialCost * 0.06)
+	materialAndTax = materialCost+materialTax
+	buildingPermit = 50;
+	
+	totalCost = materialAndTax+buildingPermit
+	
+	
+	
+	 
